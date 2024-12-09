@@ -2,6 +2,7 @@ import pandas as pd
 
 
 def fill_missing_values(row, year_cols, increase_percentage):
+    #github check
     last_valid_value = None
     second_last_valid_value = None
     for i in range(len(year_cols)):
@@ -22,3 +23,4 @@ def fill_missing_values(row, year_cols, increase_percentage):
             second_last_valid_value = last_valid_value
             last_valid_value = row[year_cols[i]]
     return row
+
